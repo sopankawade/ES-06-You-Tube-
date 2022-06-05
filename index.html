@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #container {
+            display: grid;;
+            grid-template-columns: repeat(4, 20%);
+            grid-gap: 50px;
+            gap: 80px;
+            cursor: pointer;
+            margin-top: 25px;
+        }
+        #container div{
+          width: auto;
+          border: 1px solid grey;
+          text-align: center;
+        }
+        iframe{
+          width: 100%;
+        }
+        body{
+          display: flex;
+          flex-direction: column;
+        }
+        body input{
+          text-align: center;
+          height: 45px;
+          width: 65%;
+          margin: auto;
+          border: 1px solid rgb(62, 4, 14);
+          border-radius: 10px;
+          font-size: 20px;
+        }
+        body button{
+          width: 150px;
+          height: 35px;
+          background-color: blue;
+          color: white;
+          margin: auto;
+          margin-top: 15px;
+          font-size: 18px
+        }
+
+    </style>
+  </head>
+  <body>
+
+    <input type="text" id="query">
+    <button onclick="search()">Search</button>
+
+    <div id="container"></div>
+  </body>
+</html>
+
+<script src="index.js">
+
+    //  Spread:---
+
+
+    /* let arr =[1,2,3,4]
+    console.log(...arr)    // O/P 1 2 3
+    let str = "masai";
+    console.log(...str)    // m s a i
+
+    let arr1 = [1,2,3];
+    let arr2 = [4,5,6];
+    let newArray = [...arr1, ...arr2];
+    console.log(newArray); */     //o/p:-- 1 2 3 4 5 6
+
+
+    //  Rest ===>>>
+
+    /* function func(a, ...b){
+        console.log("a:",a);
+        console.log("b:",b)
+    }
+
+    func("box1", "box2", "box3", "box4")
+
+    //o/p==>>
+     /* a: box1
+    (3) ['box2', 'box3', 'box4'] 
+
+
+    // Destructuring===>>>
+
+let name = "sopan";
+let city = "Pune";
+
+let obj = {
+    name,
+    city,
+};
+console.log(obj)
+
+let obj = {
+    name: "Bablu",
+    address: {
+        street: "M G street",
+        details: {
+            state: "Goa",
+            pin: 422605,
+        }
+    }
+}
+
+//console.log(obj.address.details.state)   // Op=>Goa
+
+let {
+    address: {
+        details: { state, pin }
+        }
+    } = obj;
+
+    console.log(state, pin)
+    
+    
+    */ 
+
+
+
+
+</script>
